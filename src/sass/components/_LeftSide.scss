@@ -1,0 +1,642 @@
+@media screen and(max-width: 480px) {
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap");
+
+.choose__modules {
+  width: 100%;
+}
+
+.parent {
+  margin-top: 60px;
+}
+
+.blocks__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.panel__holder {
+  margin-top: 40px;
+  width: 100%;
+}
+.title__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.description {
+  font-family: "Source Sans Pro";
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main__caption {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--c_text);
+  text-align: left;
+  margin: 0;
+}
+
+.position__left {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.position__right {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(247, 169, 51);
+  transition: all 250ms linear;
+}
+
+.round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.position__right .round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.kore__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 0.1rem;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.position__right .kore__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.active__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  border-style: solid;
+  border-width: thin;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-color: rgb(247, 169, 51);
+  color: #fff;
+  background-color: rgb(247, 169, 51);
+  cursor: pointer;
+}
+
+.disabled__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(247, 169, 51);
+  background-color: var(--c_bg);
+  color: rgb(247, 169, 51);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.disabled__pick:hover {
+  background-color: rgb(247, 169, 51);
+  color: #fff;
+}
+
+.off__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(231, 231, 231);
+  background-color: rgb(231, 231, 231);
+  color: rgb(139, 139, 139);
+  cursor: default;
+  transition: 0.1s;
+}
+
+.analiza {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.undercaption {
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  text-align: left;
+}
+
+.button__holder {
+  margin-top: 20px;
+  align-items: left;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.korespondencja {
+  margin-top: 50px;
+}
+
+.options__hold {
+  display: flex;
+  justify-content: center;
+}
+
+.option__position__left {
+  display: flex;
+  margin-top: 18px;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.option__position__right {
+  display: flex;
+  margin-top: 18px;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(115, 164, 255);
+  transition: all 250ms linear;
+}
+
+.option__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.option__position__right .option__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.few__option__holder {
+  margin-top: 8px;
+  margin-bottom: 26px;
+  display: flex;
+  gap: 20px;
+}
+
+.few__option__position__left {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.few__option__position__right {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(180, 140, 255);
+  transition: all 250ms linear;
+}
+
+.few__option__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.few__option__position__right .few__option__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.few__option__holder {
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+}
+
+.pick__few__disabled {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(180, 140, 255);
+  background-color: var(--c_bg);
+  color: rgb(180, 140, 255);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.pick__few__disabled:hover {
+  background-color: rgb(180, 140, 255);
+  color: #fff;
+}
+
+.pick__few__enabled {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(180, 140, 255);
+  background-color: rgb(180, 140, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+
+}
+@media screen and(min-width: 868px) {
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap");
+
+.choose__modules {
+  width: 530px;
+  height: 417px;
+}
+
+.blocks__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.panel__holder {
+  margin-top: 40px;
+  width: 530px;
+  height: 574px;
+}
+.title__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.description {
+  font-family: "Source Sans Pro";
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main__caption {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--c_text);
+  text-align: left;
+  margin: 0;
+}
+
+.position__left {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.position__right {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(247, 169, 51);
+  transition: all 250ms linear;
+}
+
+.round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.position__right .round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.kore__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 0.1rem;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.position__right .kore__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.active__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  border-style: solid;
+  border-width: thin;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-color: rgb(247, 169, 51);
+  color: #fff;
+  background-color: rgb(247, 169, 51);
+  cursor: pointer;
+}
+
+.disabled__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(247, 169, 51);
+  background-color: var(--c_bg);
+  color: rgb(247, 169, 51);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.disabled__pick:hover {
+  background-color: rgb(247, 169, 51);
+  color: #fff;
+}
+
+.off__pick {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(231, 231, 231);
+  background-color: rgb(231, 231, 231);
+  color: rgb(139, 139, 139);
+  cursor: default;
+  transition: 0.1s;
+}
+
+.analiza {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.undercaption {
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  text-align: left;
+}
+
+.button__holder {
+  margin-top: 20px;
+  align-items: left;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.korespondencja {
+  margin-top: 50px;
+}
+
+.options__hold {
+  display: flex;
+  justify-content: center;
+}
+
+.option__position__left {
+  display: flex;
+  margin-top: 18px;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.option__position__right {
+  display: flex;
+  margin-top: 18px;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(115, 164, 255);
+  transition: all 250ms linear;
+}
+
+.option__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.option__position__right .option__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.few__option__holder {
+  margin-top: 8px;
+  margin-left: 39px;
+  margin-bottom: 26px;
+  display: flex;
+  gap: 20px;
+}
+
+.few__option__position__left {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+  transition: all 250ms linear;
+}
+
+.few__option__position__right {
+  display: flex;
+  width: 42px;
+  height: 21px;
+  border: none;
+  padding: 1px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(180, 140, 255);
+  transition: all 250ms linear;
+}
+
+.few__option__round__switcher {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 250ms linear;
+}
+
+.few__option__position__right .few__option__round__switcher {
+  margin-left: calc(46px / 2);
+}
+
+.few__option__holder {
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+}
+
+.pick__few__disabled {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(180, 140, 255);
+  background-color: var(--c_bg);
+  color: rgb(180, 140, 255);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.pick__few__disabled:hover {
+  background-color: rgb(180, 140, 255);
+  color: #fff;
+}
+
+.pick__few__enabled {
+  font-family: "Source Sans Pro";
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  border-radius: 11px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(180, 140, 255);
+  background-color: rgb(180, 140, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+
+}
